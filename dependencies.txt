@@ -1,0 +1,25 @@
+To get the most out of this book
+The code in the book was written using Python version 3.6. To install Python and Python libraries, I recommend using Anaconda, a scientific computing distribution. You can read more about Anaconda and download it at https://www.anaconda.com/download/. This will install many useful Python packages on you system. You will need to install two more packages. To install PyMC3 please use conda:
+
+conda install -c conda-forge pymc3
+
+And for ArviZ you can do it with the following command:
+pip install arviz
+
+An alternative way to install the necessary packages, once Anaconda is installed in your system, is to go to https://github.com/aloctavodia/BAP and download the environment file named bap.yml. Using it, you can install all the necessary packages by doing the following:
+conda env create -f bap.yml
+
+The Python packages used to write this book are listed here:
+
+IPython 7.0
+Jupyter 1.0 (or Jupyter-lab 0.35)
+NumPy 1.14.2
+SciPy 1.1
+pandas 0.23.4
+Matplotlib 3.0.2
+Seaborn 0.9.0
+ArviZ 0.3.1
+PyMC3 3.6
+The code presented in each chapter assumes that you have imported at least some of these packages. Instead of copying and pasting the code from the book, I recommend downloading the code from https://github.com/aloctavodia/BAP and running it using Jupyter Notebook (or Jupyter Lab). I will keep this repository updated for new releases of PyMC3 or ArviZ. If you find a technical problem running the code in this book, a typo in the text, or any other mistake, please fill an issue in that repository and I will try to solve it as soon as possible.
+
+Most figures in this book are generated using code. A common pattern you will find in this book is the following: a block of code immediately followed by a figure (generated from that code). I hope this pattern will look familiar to those of you using Jupyter Notebook/Lab, and I hope it does not appear annoying or confusing to anyone.
